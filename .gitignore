@@ -1,0 +1,7 @@
+_old/
+.venv/
+data/input/
+data/output/
+data/temp/
+__pycache__/
+*.env
