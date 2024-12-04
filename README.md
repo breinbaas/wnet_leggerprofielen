@@ -6,8 +6,6 @@
 
 * Plaats alle originele stix bestanden in 1 map
 * Maak directories aan volgens de paden die in het bestand settings.py te vinden zijn
-* Run het script ```split.py```, dit zorgt ervoor dat er onderscheid wordt gemaakt tussen de BBF, SGA, LPS modellen
-* Indien een berekening geen gebruik maakt van 1 van de voorgaande modellen dan wordt deze naar de errors map verplaatst (zie settings.py) en dient deze aangepast te worden
 
 ### CSV en SHAPE bestanden
 
