@@ -128,7 +128,17 @@ for stix_file in stix_files:
     shutil.copy(stix_file, base_path / f"01_original.stix")
 
     # write the converted levee to stix for comparison
-    levee.to_stix(base_path / f"02_as_levee_object.stix")
+    try:
+        levee.to_stix(base_path / f"02_as_levee_object.stix")
+    except Exception as e:
+        logging.error(
+            f"Fout bij het omzetten naar een Levee object; '{e}'",
+        )
+        move_to_error_directory(
+            stix_file,
+            f"Fout bij het omzetten naar een Levee object; '{e}'",
+        )
+        continue
 
     ##################################
     # GET THE CALCULATION PARAMETERS #
