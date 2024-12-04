@@ -1,5 +1,4 @@
 import logging
-
 import os
 import glob
 from pathlib import Path
