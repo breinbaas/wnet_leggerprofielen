@@ -1,9 +1,8 @@
 import logging
-import datetime
+
 import os
 import glob
 from pathlib import Path
-from tqdm import tqdm
 import shutil
 from copy import deepcopy
 import matplotlib.pyplot as plt
@@ -20,9 +19,7 @@ from leveelogic.objects.soil import Soil
 from objects.dijktrajecten import Dijktrajecten
 from objects.iposearch import IPOSearch
 from objects.uitgangspunten import Uitgangspunten
-from objects.onderhoudsdieptes import OnderhoudsDieptes
 from settings import *
-from logic import iterate_solution, generate_output
 from helpers import (
     stix_has_solution,
     get_natural_slopes_line,
