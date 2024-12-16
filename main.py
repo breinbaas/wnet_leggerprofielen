@@ -151,11 +151,11 @@ for stix_file in stix_files:
         )
     except Exception as e:
         logging.error(
-            f"Fout bij het zoek naar informatie voor dijktraject '{dtcode}' bij metrering {chainage}.",
+            f"Fout bij het zoeken naar informatie voor dijktraject '{dtcode}' bij metrering {chainage}; {e}",
         )
         move_to_error_directory(
             stix_file,
-            f"Fout bij het zoek naar informatie voor dijktraject '{dtcode}' bij metrering {chainage}.",
+            f"Fout bij het zoeken naar informatie voor dijktraject '{dtcode}' bij metrering {chainage}; {e}",
         )
         continue
 

@@ -1,34 +1,36 @@
 from leveelogic.objects.levee import AnalysisType
 
 # waar staan alle basis stix bestanden
-PATH_ORIGINAL_FILES = r"D:\Development\leggerprofielen\data\input\stix\original"
-PATH_ALL_STIX_FILES = r"D:\Development\leggerprofielen\data\input\stix\all"
-PATH_STIX_ERRORS = r"D:\Development\leggerprofielen\data\input\stix\errors"
+PATH_ORIGINAL_FILES = (
+    r"D:\Development\Python\wnet_leggerprofielen\data\input\stix\original"
+)
+PATH_ALL_STIX_FILES = r"D:\Development\Python\wnet_leggerprofielen\data\input\stix\all"
+PATH_STIX_ERRORS = r"D:\Development\Python\wnet_leggerprofielen\data\input\stix\errors"
 
 
 # waar moeten alle afgeronde berekeningen heen
-PATH_SOLUTIONS = r"D:\Development\leggerprofielen\data\output\stix"
+PATH_SOLUTIONS = r"D:\Development\Python\wnet_leggerprofielen\data\output\stix"
 
 # waar moeten de berekeningen heen die fout zijn gegaan
-PATH_ERRORS = r"D:\Development\leggerprofielen\data\output\errors"
-PATH_DEBUG = r"D:\Development\leggerprofielen\data\output\debug"
+PATH_ERRORS = r"D:\Development\Python\wnet_leggerprofielen\data\output\errors"
+PATH_DEBUG = r"D:\Development\Python\wnet_leggerprofielen\data\output\debug"
 
 # waar moet de uitvoer van de geslaagde berekeningen heen
-PATH_SOLUTIONS_PLOTS = r"D:\Development\leggerprofielen\data\output\plots"
-PATH_SOLUTIONS_CSV = r"D:\Development\leggerprofielen\data\output\csv"
+PATH_SOLUTIONS_PLOTS = r"D:\Development\Python\wnet_leggerprofielen\data\output\plots"
+PATH_SOLUTIONS_CSV = r"D:\Development\Python\wnet_leggerprofielen\data\output\csv"
 
 # waar moet het logbestand komen
-PATH_LOG_FILE = r"D:\Development\leggerprofielen\data\output\log"
+PATH_LOG_FILE = r"D:\Development\Python\wnet_leggerprofielen\data\output\log"
 
 # waar zijn de invoer csv bestanden te vinden
-CSV_FILE_DTH = r"D:\Development\leggerprofielen\data\input\csv\dth.csv"
-CSV_FILE_IPO = r"D:\Development\leggerprofielen\data\input\csv\ipo.csv"
+CSV_FILE_DTH = r"D:\Development\Python\wnet_leggerprofielen\data\input\csv\dth.csv"
+CSV_FILE_IPO = r"D:\Development\Python\wnet_leggerprofielen\data\input\csv\ipo.csv"
 CSV_FILE_ONDERHOUDSDIEPTE = (
-    r"D:\Development\leggerprofielen\data\input\csv\onderhoudsdiepte.csv"
+    r"D:\Development\Python\wnet_leggerprofielen\data\input\csv\onderhoudsdiepte.csv"
 )
 
 # waar komen de tijdelijke berekeningen (voor debugging)
-PATH_TEMP_CALCULATIONS = r"D:\Development\leggerprofielen\data\temp"
+PATH_TEMP_CALCULATIONS = r"D:\Development\Python\wnet_leggerprofielen\data\temp"
 
 # vastgestelde waarden
 MIN_SLIP_PLANE_LENGTH = 2.0  # BBF minimale lengte glijvlak
