@@ -725,8 +725,8 @@ for stix_file in stix_files:
     ax.plot([p[0] for p in levee.surface], [p[1] for p in levee.surface], "k")
     ax.plot([p[0] for p in final_line], [p[1] for p in final_line], "k--")
     ax.plot(
-        [p[0] for p in levee.phreatic_line],
-        [p[1] for p in levee.phreatic_line],
+        [p[0] for p in levee.phreatic_line.points],
+        [p[1] for p in levee.phreatic_line.points],
         "b",
     )
 
