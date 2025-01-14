@@ -283,18 +283,27 @@ for stix_file in stix_files:
         )
         continue
 
-    ########################################
-    # WE ONDERSTEUNEN TOT NU TOE ENKEL BBF #
-    ########################################
-    if levee.analysis_type != AnalysisType.BISHOP_BRUTE_FORCE:
-        logging.error(
-            f"Dit bestand gebruikt model '{levee.analysis_type}' en we kunnen tot nu toe alleen met BBF omgaan"
-        )
-        move_to_error_directory(
-            stix_file,
-            f"Dit bestand gebruikt model '{levee.analysis_type}' en we kunnen tot nu toe alleen met BBF omgaan",
-        )
-        continue
+    #################################
+    # SPENCER ZETTEN WE OM NAAR BBF #
+    #################################
+    convert_to_bishop = levee.analysis_type == AnalysisType.SPENCER_GENETIC
+
+    # if (
+    #     levee.analysis_type != AnalysisType.BISHOP_BRUTE_FORCE
+    #     and levee.analysis_type != AnalysisType.UPLIFT_VAN_PARTICLE_SWARM
+    # ):
+    #     logging.error(
+    #         f"Dit bestand gebruikt model '{levee.analysis_type}' en we kunnen tot nu toe met BBF en LiftVan omgaan"
+    #     )
+    #     move_to_error_directory(
+    #         stix_file,
+    #         f"Dit bestand gebruikt model '{levee.analysis_type}' en we kunnen tot nu toe met BBF en LiftVan omgaan",
+    #     )
+    #     continue
+
+    # # skip BBF files
+    # if levee.analysis_type != AnalysisType.UPLIFT_VAN_PARTICLE_SWARM:
+    #     continue
 
     ####################
     # CHECK CURRENT SF #
